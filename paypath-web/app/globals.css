@@ -1,4 +1,7 @@
 @import "tailwindcss";
+*{
+  box-sizing: border-box;
+}
 
 :root {
   --background: #ffffff;
@@ -12,7 +15,25 @@
   }
 }
 
+@theme {
+  --shadow-top: 1px 4px 8px 1px #A1A1A1;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+.navbar > a {
+  padding: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  align-items: center;
+  color: #606060;
+}
+.navbar > a:hover{
+  color: #0064FF;
+  border-top: 2px solid #0064FF;
 }
